@@ -1,0 +1,242 @@
+/* Geral */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Formulário de Criação de Personagem */
+.character-form {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #f8f4e3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.character-form h2 {
+  font-size: 1.8em;
+  text-align: center;
+  color: #b22222;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.character-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+.character-form input[type="text"],
+.character-form input[type="number"],
+.character-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.character-form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1em;
+  background-color: #b22222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.character-form button:hover {
+  background-color: #8b1a1a;
+}
+
+/* Lista de Personagens */
+.character-list {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f8f4e3;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.character-list h2 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #b22222;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.character-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.character-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #f8f4e3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.character-card span {
+  font-weight: bold;
+  color: #333;
+}
+
+.character-card button {
+  padding: 8px 12px;
+  background-color: #b22222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.character-card button:hover {
+  background-color: #8b1a1a;
+}
+
+/* Ficha de Personagem */
+.character-sheet {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #f8f4e3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.character-sheet h2 {
+  font-size: 1.8em;
+  text-align: center;
+  color: #b22222;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.character-sheet p {
+  margin: 5px 0;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.character-sheet h3 {
+  font-size: 1.4em;
+  color: #b22222;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.attribute-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.attribute-box {
+  flex: 1 1 30%;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #f5f2df;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.attribute-box h4 {
+  font-size: 1.1em;
+  color: #b22222;
+  margin-bottom: 5px;
+}
+
+.attribute-box p {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.back-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #b22222;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.back-button:hover {
+  background-color: #8b1a1a;
+}
+
+/* Botão Criar Novo Personagem */
+.create-button {
+  background-color: #8b0000; /* Vermelho escuro, remete ao tema medieval */
+  color: #fff; /* Texto branco */
+  padding: 12px 24px;
+  font-size: 1em;
+  font-family: 'Georgia', serif; /* Fonte com estilo medieval */
+  text-transform: uppercase;
+  border: 2px solid #8b0000;
+  border-radius: 10px; /* Bordas arredondadas */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Sombra medieval */
+}
+
+.create-button:hover {
+  background-color: #a52a2a; /* Vermelho mais claro ao passar o mouse */
+  transform: scale(1.1); /* Efeito de crescimento */
+  border-color: #fff; /* Realça a borda ao passar o mouse */
+}
+
+/* Botão Ver Ficha */
+.view-button {
+  background-color: #4682b4; /* Azul medieval */
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-family: 'Georgia', serif; /* Fonte medieval */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px; /* Espaço ao lado do texto do personagem */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.view-button:hover {
+  background-color: #366693; /* Azul mais escuro */
+  transform: scale(1.05);
+}

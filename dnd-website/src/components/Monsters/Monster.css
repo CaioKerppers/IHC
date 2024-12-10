@@ -1,0 +1,67 @@
+/* Monstro (Monster) */
+.monster-list, .monster-details {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2em;
+  color: #b22222;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.monster-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f8f4e3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.monster-card h2 {
+  color: #333;
+}
+
+.search-input {
+  padding: 8px 12px;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.monster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.monster-link {
+  text-decoration: none;
+  color: #b22222;
+}
+
+.monster-link:hover {
+  text-decoration: underline;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #b22222;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #8b1a1a;
+}

@@ -1,0 +1,171 @@
+/* Página de Perfil do Usuário */
+.user-profile {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #f8f4e3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  box-sizing: border-box;  /* Garantir que a borda seja contada no tamanho total */
+}
+
+.user-profile h2 {
+  font-size: 1.8em;
+  color: #b22222;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'Georgia', serif;
+}
+
+.user-profile p {
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.user-profile .profile-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #b22222;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: 'Georgia', serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+}
+
+.user-profile .profile-button:hover {
+  background-color: #8b1a1a;
+  transform: scale(1.05);
+}
+
+/* Formulário de Login/Registro */
+.user-form {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #f8f4e3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;  /* Garantir que o preenchimento e a borda sejam somados */
+}
+
+.user-form h2 {
+  font-size: 1.8em;
+  color: #b22222;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.user-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+.user-form input[type="text"],
+.user-form input[type="password"],
+.user-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;  /* Inclui bordas e preenchimento na largura total */
+  word-wrap: break-word;  /* Evita que o texto saia do campo */
+}
+
+.user-form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1em;
+  background-color: #b22222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.user-form button:hover {
+  background-color: #8b1a1a;
+}
+
+/* Botões de Ação */
+.user-action-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.user-action-buttons .action-button {
+  padding: 12px 25px;
+  background-color: #4682b4;
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: 'Georgia', serif;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.user-action-buttons .action-button:hover {
+  background-color: #366693;
+  transform: scale(1.05);
+}
+
+/* Ajustes para tela responsiva */
+@media (max-width: 768px) {
+  .user-profile,
+  .user-form {
+    padding: 15px;
+    max-width: 100%;
+    width: 90%;
+  }
+
+  .user-profile h2,
+  .user-form h2 {
+    font-size: 1.5em;
+  }
+
+  .user-form label {
+    font-size: 0.9em;
+  }
+
+  .user-form input[type="text"],
+  .user-form input[type="password"],
+  .user-form input[type="email"] {
+    font-size: 0.9em;
+  }
+
+  .user-form button {
+    font-size: 1em;
+  }
+
+  .user-action-buttons .action-button {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+}
